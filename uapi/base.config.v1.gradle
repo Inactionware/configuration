@@ -2,7 +2,7 @@ allprojects {
     ext {
         base = [
             name: 'base',
-            v1: [
+            projects: [
                 common: [
                     name: 'uapi.common',
                     type: 'snapshot', // avaliable type: snapshot, alpha, beta, rc, stable
