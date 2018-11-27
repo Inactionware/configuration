@@ -4,7 +4,7 @@ allprojects {
             name: 'uapi.base',
             github: 'Inactionware/uapi.base',
             url: 'https://github.com/Inactionware/uapi.base.git',
-            license: 'GPL-3.0'
+            license: 'GPL-3.0',
             projects: [
                 common: [
                     name: 'uapi.common',
