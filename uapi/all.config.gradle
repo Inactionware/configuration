@@ -1,6 +1,7 @@
 allprojects {
     ext {
         all = [
+            group: 'uapi',
             dependencies: [
                 gradle: [
                     version: '3.2.1'
