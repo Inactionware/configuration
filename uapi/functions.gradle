@@ -8,7 +8,7 @@ def getBuildVersion(projectName) {
         } else if (matchedMeta.type == 'alpha' || matchedMeta.type == 'beta' || matchedMeta.type == 'rc') {
             buildVersion = "${buildVersion}-${matchedMeta.type}${matchedMeta.no}"
         } else {
-            buildVersion = "${buildVersion}-${build_time}"
+            buildVersion = "${buildVersion}-${buildTime}"
         }
     } else {
         throw new Exception("No project configuration for project ${projectName}");
