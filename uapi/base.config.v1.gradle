@@ -2,6 +2,8 @@ allprojects {
     ext {
         base = [
             name: 'uapi.base',
+            url: 'https://github.com/Inactionware/uapi.base.git',
+            license: 'GPL-3.0'
             projects: [
                 common: [
                     name: 'uapi.common',
