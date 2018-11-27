@@ -1,7 +1,7 @@
 allprojects {
     ext {
         base = [
-            name: 'base',
+            name: 'uapi.base',
             projects: [
                 common: [
                     name: 'uapi.common',
