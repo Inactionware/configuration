@@ -6,27 +6,27 @@ allprojects {
                 gradle: [
                     version: '3.2.1'
                 ],
-                guava: [
-                    version: '20.0'
-                ],
-                auto_service: [
-                    version: '1.0-rc2'
-                ],
-                spock: [
-                    coordinate: 'org.spockframework:spock-core:1.0-groovy-2.4',
-                    version: '1.0-groovy-2.4'
-                ],
-                cglib: [
-                    version: '3.2.4'
-                ],
-                objenesis: [
-                    version: '2.1'
-                ],
                 jacoco: [
+                    coordinate: '0.7.8',
                     version: '0.7.8'
                 ],
+                guava: [
+                    coordinate: 'com.google.guava:guava:20.0'
+                ],
+                auto_service: [
+                    coordinate: 'com.google.auto.service:auto-service:1.0-rc2'
+                ],
+                spock: [
+                    coordinate: 'org.spockframework:spock-core:1.0-groovy-2.4'
+                ],
+                cglib: [
+                    coordinate: 'cglib:cglib-nodep:3.2.4'
+                ],
+                objenesis: [
+                    coordinate: 'org.objenesis:objenesis:2.1'
+                ],
                 freemarker: [
-                    version: '2.3.23'
+                    coordinate: 'org.freemarker:freemarker:2.3.23'
                 ]
             ]
         ]
