@@ -13,7 +13,7 @@ allprojects {
                     version: '1.0-rc2'
                 ],
                 spock: [
-                    coordinate: 'org.spockframework:spock-core:1.0-groovy-2.4'
+                    coordinate: 'org.spockframework:spock-core:1.0-groovy-2.4',
                     version: '1.0-groovy-2.4'
                 ],
                 cglib: [
