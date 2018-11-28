@@ -1,3 +1,10 @@
+ext.allCfg      = rootProject.ext.all
+ext.libs        = allCfg.dependencies
+ext.repoCfg     = rootProject.ext.base
+ext.subProjects = repoCfg.projects
+
+ext.buildTime  = getBuildTime()
+
 def getBuildVersion(projectName) {
     def buildVersion = null
     def matchedMeta = subProjects.find { it.value.name == projectName }?.value
