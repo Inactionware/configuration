@@ -1,13 +1,13 @@
-ext.allCfg      = rootProject.ext.all
-ext.libs        = allCfg.dependencies
-ext.repoCfg     = rootProject.ext.base
-ext.subProjects = repoCfg.projects
+ext.allCfg          = rootProject.ext.all
+ext.libs            = allCfg.dependencies
+ext.repoCfg         = rootProject.ext.base
+ext.repoProjects    = repoCfg.projects
 
 ext.buildTime  = getBuildTime()
 
 def getBuildVersion(projectName) {
     def buildVersion = null
-    def matchedMeta = subProjects.find { it.value.name == projectName }?.value
+    def matchedMeta = repoProjects.find { it.value.name == projectName }?.value
     if (matchedMeta != null) {
         buildVersion = matchedMeta.version
         if (matchedMeta.type == 'stable') {
@@ -30,7 +30,7 @@ def getBuildTime() {
 }
 
 def getMavenRepo(projectName) {
-    def prjCfg = subProjects.find { it.value.name == projectName }?.value
+    def prjCfg = repoProjects.find { it.value.name == projectName }?.value
     if (prjCfg.type == 'stable') {
         return 'maven-release'
     } else {
