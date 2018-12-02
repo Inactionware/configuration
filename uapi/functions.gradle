@@ -3,7 +3,7 @@ ext {
     libs = allCfg.dependencies
     if (thisRepo == 'base') {
         repoCfg = rootProject.ext.base
-    } else (thisRepo == 'cornerstone') {
+    } else if (thisRepo == 'cornerstone') {
         repoCfg = rootProject.ext.cornerstone
     } else {
         throw new RunntimeExceptionn("Unsupported repo name - ${thisRepo}")
