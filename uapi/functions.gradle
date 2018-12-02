@@ -6,7 +6,7 @@ ext {
     } else if (thisRepo == 'cornerstone') {
         repoCfg = rootProject.ext.cornerstone
     } else {
-        throw new RunntimeExceptionn("Unsupported repo name - ${thisRepo}")
+        throw new RuntimeException("Unsupported repo name - ${thisRepo}")
     }
     repoProjects = repoCfg.projects
     buildTime  = getBuildTime()
