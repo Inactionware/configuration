@@ -1,9 +1,16 @@
-ext.allCfg          = rootProject.ext.all
-ext.libs            = allCfg.dependencies
-ext.repoCfg         = rootProject.ext.base
-ext.repoProjects    = repoCfg.projects
-
-ext.buildTime  = getBuildTime()
+ext {
+    allCfg = rootProject.ext.all
+    libs = allCfg.dependencies
+    if (thisRepo == 'base') {
+        repoCfg = rootProject.ext.base
+    } else (thisRepo == 'cornerstone') {
+        repoCfg = rootProject.ext.cornerstone
+    } else {
+        throw new RunntimeExceptionn("Unsupported repo name - ${thisRepo}")
+    }
+    repoProjects = repoCfg.projects
+    buildTime  = getBuildTime()
+}
 
 def getBuildVersion(projectName) {
     def buildVersion = null
