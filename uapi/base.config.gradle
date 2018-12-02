@@ -9,31 +9,31 @@ allprojects {
                 common: [
                     name: 'uapi.common',
                     type: 'snapshot', // avaliable type: snapshot, alpha, beta, rc, stable
-                    version: '1.1.0',
+                    version: '1.2.0',
                     no: 0   // The number is used only when the project type is alpha, beta, rc
                 ],
                 annotation: [
                     name: 'uapi.annotation',
                     type: 'snapshot',
-                    version: '1.1.0',
+                    version: '1.2.0',
                     no: 0
                 ],
                 codegen: [
                     name: 'uapi.codegen',
                     type: 'snapshot',
-                    version: '1.1.0',
+                    version: '1.2.0',
                     no: 0
                 ],
                 exception: [
                     name: 'uapi.exception',
                     type: 'snapshot',
-                    version: '1.1.0',
+                    version: '1.2.0',
                     no: 0
                 ],
                 state: [
                     name: 'uapi.state',
                     type: 'snapshot',
-                    version: '1.1.0',
+                    version: '1.2.0',
                     no: 0
                 ]
             ]
