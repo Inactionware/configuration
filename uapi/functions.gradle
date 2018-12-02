@@ -5,6 +5,7 @@ ext {
         repoCfg = rootProject.ext.base
     } else if (thisRepo == 'cornerstone') {
         repoCfg = rootProject.ext.cornerstone
+        baseProjects = rootProject.ext.base.projects
     } else {
         throw new RuntimeException("Unsupported repo name - ${thisRepo}")
     }

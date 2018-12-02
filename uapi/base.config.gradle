@@ -8,30 +8,35 @@ allprojects {
             projects: [
                 common: [
                     name: 'uapi.common',
+                    coordinate: 'uapi:uapi.common:1.2.0+',
                     type: 'snapshot', // avaliable type: snapshot, alpha, beta, rc, stable
                     version: '1.2.0',
                     no: 0   // The number is used only when the project type is alpha, beta, rc
                 ],
                 annotation: [
                     name: 'uapi.annotation',
+                    coordinate: 'uapi:uapi.annotation:1.2.0+',
                     type: 'snapshot',
                     version: '1.2.0',
                     no: 0
                 ],
                 codegen: [
                     name: 'uapi.codegen',
+                    coordinate: 'uapi:uapi.codegen:1.2.0+',
                     type: 'snapshot',
                     version: '1.2.0',
                     no: 0
                 ],
                 exception: [
                     name: 'uapi.exception',
+                    coordinate: 'uapi:uapi.exception:1.2.0+',
                     type: 'snapshot',
                     version: '1.2.0',
                     no: 0
                 ],
                 state: [
                     name: 'uapi.state',
+                    coordinate: 'uapi:uapi.state:1.2.0+',
                     type: 'snapshot',
                     version: '1.2.0',
                     no: 0
