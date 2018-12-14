@@ -26,6 +26,15 @@ allprojects {
                 ],
                 freemarker: [
                     coordinate: 'org.freemarker:freemarker:2.3.23'
+                ],
+                yamlbeans: [
+                    coordinate: 'com.esotericsoftware.yamlbeans:yamlbeans:1.09'
+                ],
+                jackson: [
+                    coordinate: 'com.fasterxml.jackson.jr:jackson-jr-objects:2.7.7'
+                ],
+                logback: [
+                    coordinate: 'ch.qos.logback:logback-classic:1.1.3'
                 ]
             ]
         ]
