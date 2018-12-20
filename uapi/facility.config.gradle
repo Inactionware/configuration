@@ -1,0 +1,96 @@
+allprojects {
+    ext {
+        facility = [
+            name: 'uapi.facility',
+            github: 'Inactionware/uapi.facility',
+            url: 'https://github.com/Inactionware/uapi.facility.git',
+            license: 'GPL-3.0',
+            projects: [
+                appTerminal: [
+                    name: 'uapi.app.terminal',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                auth: [
+                    name: 'uapi.auth',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                authApt: [
+                    name: 'uapi.auth.apt',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                net: [
+                    name: 'uapi.net',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                netApt: [
+                    name: 'uapi.net.apt',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                net_http: [
+                    name: 'uapi.net.http',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                net_http_netty: [
+                    name: 'uapi.net.http.netty',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                net_telnet: [
+                    name: 'uapi.net.telnet',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                protocol: [
+                    name: 'uapi.protocol',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                protocol_graphql: [
+                    name: 'uapi.protocol.graphql',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                resource: [
+                    name: 'uapi.resource',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                resource_apt: [
+                    name: 'uapi.resource.apt',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                service_spring: [
+                    name: 'uapi.service.spring',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                user: [
+                    name: 'uapi.user',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ]
+            ]
+        ]
+    }
+}
