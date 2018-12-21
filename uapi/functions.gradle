@@ -60,13 +60,15 @@ def coordinate(libCfg) {
         throw new RuntimeException("No version is defined in configuration ${libCfg}")
     }
     String group = libCfg.group
+    boolean isUapiPrj = false
     if (group == null) {
         if (!name.startsWith(allCfg.group)) {
             throw new RuntimeException("The project does not define its group : ${libCfg}")
         }
+        isUapiPrj = true
         group = allCfg.group
     }
-    return "${group}:${name}:${version}+"
+    return isUapiPrj ? "${group}:${name}:${version}+" : "${group}:${name}:${version}"
 }
 
 ext {
