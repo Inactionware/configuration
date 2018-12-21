@@ -6,6 +6,10 @@ ext {
     } else if (thisRepo == 'cornerstone') {
         repoCfg = rootProject.ext.cornerstone
         baseProjects = rootProject.ext.base.projects
+    } else if (thisRepo == 'facility') {
+        repoCfg = rootProject.ext.facility
+        baseProjects = rootProject.ext.base.projects
+        cornerstoneProjects = rootProject.ext.cornerstone.projects
     } else {
         throw new RuntimeException("Unsupported repo name - ${thisRepo}")
     }
@@ -46,8 +50,28 @@ def getMavenRepo(projectName) {
     }
 }
 
+def coordinate(libCfg) {
+    String name = libCfg.name
+    if (name == null) {
+        throw new RuntimeException("No project name is defined in configuration ${libCfg}")
+    }
+    String version = libCfg.version
+    if (version == null) {
+        throw new RuntimeException("No version is defined in configuration ${libCfg}")
+    }
+    String group = libCfg.group
+    if (group == null) {
+        if (!name.startWith(allCfg.group)) {
+            throw new RuntimeException("The project does not define its group : ${libCfg}")
+        }
+        group = allCfg.group
+    }
+    return "${group}:${name}:${version}"
+}
+
 ext {
     getBuildVersion = this.&getBuildVersion
     getBuildTime = this.&getBuildTime
     getMavenRepo = this.&getMavenRepo
+    coordinate = this.&coordinate
 }

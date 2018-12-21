@@ -10,22 +10,40 @@ allprojects {
                     version: '0.7.8'
                 ],
                 guava: [
-                    coordinate: 'com.google.guava:guava:20.0'
+                    group: 'com.google.guava',
+                    name: 'guava',
+                    version: '20.0'
+                    // coordinate: 'com.google.guava:guava:20.0'
                 ],
                 auto_service: [
-                    coordinate: 'com.google.auto.service:auto-service:1.0-rc2'
+                    group: 'com.google.auto.service',
+                    name: 'auto-service',
+                    version: '1.0-rc2'
+                    // coordinate: 'com.google.auto.service:auto-service:1.0-rc2'
                 ],
                 spock: [
-                    coordinate: 'org.spockframework:spock-core:1.0-groovy-2.4'
+                    group: 'org.spockframework',
+                    name: 'spock-core',
+                    version: '1.0-groovy-2.4'
+                    // coordinate: 'org.spockframework:spock-core:1.0-groovy-2.4'
                 ],
                 cglib: [
-                    coordinate: 'cglib:cglib-nodep:3.2.4'
+                    group: 'cglib',
+                    name: 'cglib-nodep',
+                    version: '3.2.4'
+                    // coordinate: 'cglib:cglib-nodep:3.2.4'
                 ],
                 objenesis: [
-                    coordinate: 'org.objenesis:objenesis:2.1'
+                    group: 'org.objenesis',
+                    name: 'objenesis',
+                    version: '2.1'
+                    // coordinate: 'org.objenesis:objenesis:2.1'
                 ],
                 freemarker: [
-                    coordinate: 'org.freemarker:freemarker:2.3.23'
+                    group: 'org.freemarker',
+                    name: 'freemarker',
+                    version: '2.3.23'
+                    // coordinate: 'org.freemarker:freemarker:2.3.23'
                 ]
             ]
         ]
