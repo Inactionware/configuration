@@ -61,7 +61,7 @@ def coordinate(libCfg) {
     }
     String group = libCfg.group
     if (group == null) {
-        if (!name.startWith(allCfg.group)) {
+        if (!name.startsWith(allCfg.group)) {
             throw new RuntimeException("The project does not define its group : ${libCfg}")
         }
         group = allCfg.group
