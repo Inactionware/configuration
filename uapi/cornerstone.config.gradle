@@ -12,7 +12,7 @@ allprojects {
                     version: '1.0.0',
                     no: 0
                 ],
-                serviceApt: [
+                service_apt: [
                     name: 'uapi.service.apt',
                     type: 'snapshot',
                     version: '1.0.0',
@@ -24,7 +24,7 @@ allprojects {
                     version: '1.0.0',
                     no: 0
                 ],
-                configApt: [
+                config_apt: [
                     name: 'uapi.config.apt',
                     type: 'snapshot',
                     version: '1.0.0',
@@ -42,7 +42,7 @@ allprojects {
                     version: '1.0.0',
                     no: 0
                 ],
-                behaviorApt: [
+                behavior_apt: [
                     name: 'uapi.behavior.apt',
                     type: 'snapshot',
                     version: '1.0.0',
@@ -54,7 +54,7 @@ allprojects {
                     version: '1.1.0',
                     no: 0
                 ],
-                commandApt: [
+                command_apt: [
                     name: 'uapi.command.apt',
                     type: 'snapshot',
                     version: '1.0.0',

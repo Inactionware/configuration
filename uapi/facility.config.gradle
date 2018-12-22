@@ -6,7 +6,7 @@ allprojects {
             url: 'https://github.com/Inactionware/uapi.facility.git',
             license: 'GPL-3.0',
             projects: [
-                appTerminal: [
+                app_terminal: [
                     name: 'uapi.app.terminal',
                     type: 'snapshot',
                     version: '1.0.0',
@@ -18,7 +18,7 @@ allprojects {
                     version: '1.0.0',
                     no: 0
                 ],
-                authApt: [
+                auth_apt: [
                     name: 'uapi.auth.apt',
                     type: 'snapshot',
                     version: '1.0.0',
@@ -30,7 +30,7 @@ allprojects {
                     version: '1.0.0',
                     no: 0
                 ],
-                netApt: [
+                net_apt: [
                     name: 'uapi.net.apt',
                     type: 'snapshot',
                     version: '1.0.0',
