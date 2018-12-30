@@ -39,7 +39,7 @@ allprojects {
                 behavior: [
                     name: 'uapi.behavior',
                     type: 'snapshot',
-                    version: '1.0.0',
+                    version: '1.1.0',
                     no: 0
                 ],
                 behavior_apt: [
