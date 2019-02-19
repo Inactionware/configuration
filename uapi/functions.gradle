@@ -10,6 +10,11 @@ ext {
         repoCfg = rootProject.ext.facility
         baseProjects = rootProject.ext.base.projects
         cornerstoneProjects = rootProject.ext.cornerstone.projects
+    } else if (thisRepo == 'tutorial') {
+        repoCfg = rootProject.ext.tutorial
+        baseProjects = rootProject.ext.base.projects
+        cornerstoneProjects = rootProject.ext.cornerstone.projects
+        facilityProjects = rootProject.ext.facility.projects
     } else {
         throw new RuntimeException("Unsupported repo name - ${thisRepo}")
     }
