@@ -1,0 +1,42 @@
+allprojects {
+    ext {
+        tutorial = [
+            name: 'uapi.tutorial',
+            github: 'Inactionware/uapi.tutorial',
+            url: 'https://github.com/Inactionware/uapi.tutorial.git',
+            license: 'GPL-3.0',
+            projects: [
+                app: [
+                    name: 'uapi.tutorial.app',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                config: [
+                    name: 'uapi.tutorial.config',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                profile: [
+                    name: 'uapi.tutorial.profile',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                quickstart: [
+                    name: 'uapi.tutorial.quickstart',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
+                service: [
+                    name: 'uapi.tutorial.service',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ]
+            ]
+        ]
+    }
+}
