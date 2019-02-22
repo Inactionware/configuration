@@ -42,10 +42,7 @@ then
     echo "Done"
 fi
 
-if [ -z "$msg_err" ]
+if [ -n "$msg_err" ]
 then
-    exit 0
-else
     echo -e "$msg_err"
-    exit 1
 fi
