@@ -17,7 +17,7 @@ then
     echo -e "Java environment is detected...\c"
     ver_java=`$cmd_javac -version 2>&1`
     echo -e "version is $ver_java\n"
-    ver_java=`expr substr "$ver_java" 7 3`
+    ver_java=`echo ${ver_java:6:3}`
     if [ "$?" != "0" ]
     then
         msg_err="Run expr command error!"
