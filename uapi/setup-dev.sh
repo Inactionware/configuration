@@ -32,7 +32,7 @@ then
     if [ $USER == "min" ] && [ $host == "min-vm-elementary" ]       # At Linux VM host development
     then
         export JAVA_HOME=$jhome_vm
-    elif [ $USER == "xiaoming" ] && [ $host == "min-home.local" ]   # At MacOS host development
+    elif [ $USER == "xiaoming" ] && [ $host == "minmac.local" ]   # At MacOS host development
     then
         export JAVA_HOME=$jhome_mac
     else
