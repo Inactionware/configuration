@@ -28,18 +28,20 @@ fi
 if [ -z "$msg_err" ] && [ "$ver_java" != "$jversion" ]
 then
     echo "No Java environment found or the version of Java is not supported."
-    echo -e "Initialize JAVA environment......\c"
+    echo -e "Initialize JAVA environment......"
     if [ $USER == "min" ] && [ $host == "min-vm-elementary" ]       # At Linux VM host development
     then
         export JAVA_HOME=$jhome_vm
+        echo -e "The java home has been set to $jhome_vm"
     elif [ $USER == "xiaoming" ] && [ $host == "minmac.local" ]   # At MacOS host development
     then
         export JAVA_HOME=$jhome_mac
+        echo -e "The java home has been set to $jhome_mac"
     else
         msg_err="\nUnsupported user - $USER@$host, please reconfig the user"
     fi
     export PATH=$JAVA_HOME/bin:$PATH
-    echo "Done"
+    echo "Done JAVA environment initialization"
 fi
 
 if [ -n "$msg_err" ]
