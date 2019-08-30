@@ -8,67 +8,67 @@ allprojects {
             projects: [
                 service: [
                     name: 'uapi.service',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.0.0',
                     no: 0
                 ],
                 service_apt: [
                     name: 'uapi.service.apt',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.0.0',
                     no: 0
                 ],
                 config: [
                     name: 'uapi.config',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.0.0',
                     no: 0
                 ],
                 config_apt: [
                     name: 'uapi.config.apt',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.0.0',
                     no: 0
                 ],
                 event: [
                     name: 'uapi.event',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.0.0',
                     no: 0
                 ],
                 behavior: [
                     name: 'uapi.behavior',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '2.0.0',
                     no: 0
                 ],
                 behavior_apt: [
                     name: 'uapi.behavior.apt',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '2.0.0',
                     no: 0
                 ],
                 command: [
                     name: 'uapi.command',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.1.0',
                     no: 0
                 ],
                 command_apt: [
                     name: 'uapi.command.apt',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.0.0',
                     no: 0
                 ],
                 log: [
                     name: 'uapi.log',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.0.0',
                     no: 0
                 ],
                 app: [
                     name: 'uapi.app',
-                    type: 'snapshot',
+                    type: 'stable',
                     version: '1.0.0',
                     no: 0
                 ]
