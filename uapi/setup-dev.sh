@@ -1,8 +1,8 @@
 # The required java version for build environment
-jversion=1.8
+jversion=11.0
 
 # Define java home for different development environment
-jhome_mac="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home"
+jhome_mac="/Users/xiaoming/.sdkman/candidates/java/11.0.4-zulu"
 jhome_vm="/home/min/Dev/zuluJdk-8.0.192"
 
 os=`uname -s`
@@ -17,7 +17,7 @@ then
     echo -e "Java environment is detected...\c"
     ver_java=`$cmd_javac -version 2>&1`
     echo -e "version is $ver_java\n"
-    ver_java=`echo ${ver_java:6:3}`
+    ver_java=`echo ${ver_java:6:4}`
     if [ "$?" != "0" ]
     then
         msg_err="Run expr command error!"
