@@ -20,7 +20,7 @@ allprojects {
                     version: '1.0-rc2'
                 ],
                 spock: [
-                    group: 'org.spockframework.spock',
+                    group: 'org.spockframework',
                     name: 'spock-core',
                     version: '1.3-groovy-2.5'
                 ],
