@@ -7,6 +7,12 @@ allprojects {
         }
     }
 
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "http://dl.bintray.com/typesafe/maven-releases" }
+    }
+
     ext {
         all = [
             group: 'uapi',
