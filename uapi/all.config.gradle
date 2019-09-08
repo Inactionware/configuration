@@ -1,4 +1,12 @@
 allprojects {
+    buildscript {
+        repositories {
+            mavenLocal()
+            mavenCentral()
+            jcenter()
+        }
+    }
+
     ext {
         all = [
             group: 'uapi',
