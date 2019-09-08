@@ -3,9 +3,9 @@ allprojects {
         all = [
             group: 'uapi',
             dependencies: [
-                gradle: [
-                    version: '3.2.1'
-                ],
+                // gradle: [
+                //     version: '3.2.1'
+                // ],
                 jacoco: [
                     version: '0.8.4'
                 ],
@@ -22,7 +22,7 @@ allprojects {
                 spock: [
                     group: 'org.spockframework',
                     name: 'spock-core',
-                    version: '1.0-groovy-2.4'
+                    version: 'spock-1.3'
                 ],
                 cglib: [
                     group: 'cglib',
