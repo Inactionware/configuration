@@ -41,12 +41,12 @@ allprojects {
                 cglib: [
                     group: 'cglib',
                     name: 'cglib-nodep',
-                    version: '3.2.4'
+                    version: '3.3.0'
                 ],
                 objenesis: [
                     group: 'org.objenesis',
                     name: 'objenesis',
-                    version: '2.1'
+                    version: '3.0.1'
                 ],
                 freemarker: [
                     group: 'org.freemarker',
