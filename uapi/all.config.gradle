@@ -22,7 +22,7 @@ allprojects {
                 spock: [
                     group: 'org.spockframework.spock',
                     name: 'spock-core',
-                    version: 'spock-1.3'
+                    version: '1.3-groovy-2.5'
                 ],
                 cglib: [
                     group: 'cglib',
