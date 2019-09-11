@@ -3,7 +3,7 @@ jversion=11.0
 
 # Define java home for different development environment
 jhome_mac="/Users/xiaoming/.sdkman/candidates/java/11.0.4-zulu"
-jhome_vm="/home/min/Dev/zuluJdk-8.0.192"
+jhome_vm="/home/min/Dev/zuluJdk-11.0.4"
 
 os=`uname -s`
 host=`hostname`
