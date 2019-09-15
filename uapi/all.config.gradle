@@ -33,7 +33,7 @@ allprojects {
                 auto_service: [
                     group: 'com.google.auto.service',
                     name: 'auto-service',
-                    version: '1.0-rc2'
+                    version: '1.0-rc6'
                 ],
                 spock: [
                     group: 'org.spockframework',
