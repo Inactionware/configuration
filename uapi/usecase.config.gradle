@@ -6,6 +6,12 @@ allprojects {
             url: 'https://github.com/Inactionware/uapi.usecase.git',
             license: 'GPL-3.0',
             projects: [
+                funds_flow: [
+                    name: 'funds_flow',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ]
             ]
         ]
     }
