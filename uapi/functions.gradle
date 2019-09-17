@@ -15,6 +15,11 @@ ext {
         baseProjects = rootProject.ext.base.projects
         cornerstoneProjects = rootProject.ext.cornerstone.projects
         facilityProjects = rootProject.ext.facility.projects
+    } else if (thisRepo == 'usecase') {
+        repoCfg = rootProject.ext.usecase
+        baseProjects = rootProject.ext.base.projects
+        cornerstoneProjects = rootProject.ext.cornerstone.projects
+        facilityProjects = rootProject.ext.facility.projects
     } else {
         throw new RuntimeException("Unsupported repo name - ${thisRepo}")
     }

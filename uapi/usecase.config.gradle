@@ -1,0 +1,12 @@
+allprojects {
+    ext {
+        usecase = [
+            name: 'uapi.usecase',
+            github: 'Inactionware/uapi.usecase',
+            url: 'https://github.com/Inactionware/uapi.usecase.git',
+            license: 'GPL-3.0',
+            projects: [
+            ]
+        ]
+    }
+}
