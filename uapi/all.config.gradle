@@ -80,6 +80,11 @@ allprojects {
                     group: 'io.netty',
                     name: 'netty-all',
                     version: '4.1.17.Final'
+                ],
+                asm: [
+                    group: 'org.ow2.asm',
+                    name: 'asm',
+                    version: '7.2'
                 ]
             ]
         ]
