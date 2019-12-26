@@ -51,13 +51,13 @@ allprojects {
                 command: [
                     name: 'uapi.command',
                     type: 'snapshot',
-                    version: '1.1.0',
+                    version: '1.1.1',
                     no: 0
                 ],
                 command_apt: [
                     name: 'uapi.command.apt',
                     type: 'snapshot',
-                    version: '1.0.0',
+                    version: '1.0.1',
                     no: 0
                 ],
                 log: [
