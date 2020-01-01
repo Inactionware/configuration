@@ -78,7 +78,19 @@ def coordinate(libCfg) {
         isUapiPrj = true
         group = allCfg.group
     }
-    return isUapiPrj ? "${group}:${name}:${version}+" : "${group}:${name}:${version}"
+    return isUapiPrj ? "${group}:${name}:[${version},${getUpVersion(version, name)})" : "${group}:${name}:${version}"
+}
+
+def getUpVersion(String version, String libName) {
+    String[] versions = version.split('\\.')
+    if (versions.length < 3) {
+        throw new RuntimeException("The version string is invalid ${version}, ${versions}, libName - ${libName}")
+    }
+    String vMajor = versions[0]
+    String vMinor = versions[1]
+    String vFix = versions[2]
+    int fix = Integer.parseInt(vFix) + 1
+    return "${vMajor}.${vMinor}.${fix}"
 }
 
 ext {
