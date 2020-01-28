@@ -79,7 +79,7 @@ allprojects {
                 netty: [
                     group: 'io.netty',
                     name: 'netty-all',
-                    version: '4.1.17.Final'
+                    version: '4.1.45.Final'
                 ]
             ]
         ]
