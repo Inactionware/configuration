@@ -1,0 +1,41 @@
+# Note: the project start with ^ means it is unreleased project.
+
+== uapi.base ==
+
+uapi.common:        1.3.0 -> 1.3.1
+uapi.annotation:    1.2.0 -> 1.3.0
+uapi.codegen:       1.2.0 -> 1.3.0
+uapi.exception:     1.2.0 -> 1.2.1
+uapi.state:         1.2.0 -> 1.2.1
+
+== uapi.cornerstone ==
+
+uapi.service:       1.0.0 -> 1.1.0
+uapi.service.apt:   1.0.0 -> 1.1.0
+uapi.config:        1.0.0 -> 1.0.1
+uapi.config.apt:    1.0.0 -> 1.0.1
+uapi.event:         1.0.0 -> 1.0.1
+uapi.behavior:      2.0.0 -> 2.0.1
+uapi.behavior.apt:  2.0.0 -> 2.0.2
+^uapi.command:      1.1.0 -> 1.1.1
+^uapi.command.apt:  1.0.0 -> 1.0.1
+uapi.log:           1.0.0 -> 1.0.1
+uapi.app:           1.0.0 -> 1.0.1
+
+== uapi.facility ==
+
+^uapi.app.terminal:     1.0.0 ->
+^uapi.auth:             1.0.0 ->
+^uapi.auth.apt:         1.0.0 ->
+^uapi.net:              1.0.0 ->
+^uapi.net.apt:          1.0.0 ->
+^uapi.net.http:         1.0.0 ->
+^uapi.net.http.netty:   1.0.0 ->
+^uapi.net.telnet:       1.0.0 ->
+^uapi.protocol:         1.0.0 ->
+^uapi.protocol.graphql: 1.0.0 ->
+^uapi.resource:         1.0.0 ->
+^uapi.resource.apt:     1.0.0 ->
+^uapi.service.spring:   1.0.0 ->
+^uapi.behavior.common:  1.0.0 ->
+^uapi.user:             1.0.0 ->
