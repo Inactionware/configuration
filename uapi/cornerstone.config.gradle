@@ -9,7 +9,7 @@ allprojects {
                 service: [
                     name: 'uapi.service',
                     type: 'snapshot',
-                    version: '1.1.0',
+                    version: '1.1.1',
                     no: 0
                 ],
                 service_apt: [
