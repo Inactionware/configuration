@@ -36,6 +36,12 @@ allprojects {
                     version: '1.0.1',
                     no: 0
                 ],
+                utm: [
+                    name: 'uapi.utm',
+                    type: 'snapshot',
+                    version: '1.0.0',
+                    no: 0
+                ],
                 behavior: [
                     name: 'uapi.behavior',
                     type: 'snapshot',
